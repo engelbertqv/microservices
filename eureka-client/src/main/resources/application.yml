@@ -10,9 +10,6 @@ eureka:
     serviceUrl:
       defaultZone: ${eureka_url:http://eureka-server:8761/eureka/}
 
-spring:
-  application:
-    name: a-bootiful-client
 #  devtools:
 #    remote:
 #      secret: mysecret

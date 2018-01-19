@@ -30,8 +30,7 @@ public class BookService {
 		// URI uri = URI.create("http://eureka-client:8090/book/".concat(bookName));
 
 		URI uri = URI.create(serviceUrl().concat("book").concat("/").concat(bookName));
-		String book =  this.restTemplate.getForObject(uri, String.class);
-		return book;
+		return this.restTemplate.getForObject(uri, String.class);
 	}
 
 	public String serviceUrl() {

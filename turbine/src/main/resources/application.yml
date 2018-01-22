@@ -1,0 +1,22 @@
+server:
+  port: 8989
+  
+turbine:
+  aggregator:
+    cluster-config: CIRCUIT-BREAKER-CLIENT
+  app-config: CIRCUIT-BREAKER-CLIENT
+    
+logging:
+  pattern:
+    file:  INFO
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true      
+#  instance:
+#    status-page-url: ${management.context-path}/info
+#    health-check-url-path: ${management.context-path}/health
+    

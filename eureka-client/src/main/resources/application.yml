@@ -9,7 +9,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${eureka_url:http://localhost:8761/eureka/}
-
+#    healthcheck:
+#      enabled: true   
 #  devtools:
 #    remote:
 #      secret: mysecret
@@ -17,3 +18,16 @@ eureka:
 #management:
 #  security:
 #    enabled: false
+
+endpoints:
+  info:
+    id: info
+    sensitive: false
+    enabled: true
+    
+info:
+  app:
+    name: Cliente de Eureka
+    description: Esta es mi primera apliación usando un cliente de eureka
+    version: 1.0.0 
+    

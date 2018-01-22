@@ -19,7 +19,7 @@ import com.example.service.BookService;
 @EnableCircuitBreaker
 @RestController
 @SpringBootApplication
-//@EnableHystrixDashboard
+@EnableHystrixDashboard
 @EnableEurekaClient
 @ComponentScan("com.example.*")
 public class ReadingApplication {

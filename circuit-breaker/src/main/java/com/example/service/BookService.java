@@ -40,7 +40,7 @@ public class BookService {
 
 	public String reliable(String bookName) {
 		// return "Cloud Native Java (O'Reilly)";
-		return "bookName is not available";
+		return bookName.concat(" is not available");
 	}
 
 }
